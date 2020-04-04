@@ -95,7 +95,7 @@ northern_month : "Year-round",
 southern_month : "Year-round"
 },
 {
-    name:"ifish",
+    name:"Killifish",
 location :"Pond",
 size : "Smallest",
 sell_price : "300",
@@ -886,22 +886,29 @@ Time and Date:<br>
 
 <div >
     <table id="fishList" style="width:100%">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-        </tr>
-        <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-        </tr>
+
     </table>
 </div>
+<script>
+    window.addEventListener("load", function() {
+    var now = new Date();
+    var utcString = now.toISOString().substring(0,19);
+    var year = now.getFullYear();
+    var month = now.getMonth() + 1;
+    var day = now.getDate();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    var localDatetime = year + "-" +
+                      (month < 10 ? "0" + month.toString() : month) + "-" +
+                      (day < 10 ? "0" + day.toString() : day) + "T" +
+                      (hour < 10 ? "0" + hour.toString() : hour) + ":" +
+                      (minute < 10 ? "0" + minute.toString() : minute) +
+                      utcString.substring(16,19);
+    var datetimeField = document.getElementById("timeOfDay");
+    datetimeField.value = localDatetime;
+    generateList();
+});
+</script>
 </body>
 </html>

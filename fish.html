@@ -1,0 +1,907 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <script>
+var fish = [
+{
+    name:"Bitterling",
+location :"River",
+size : "Smallest",
+sell_price : "900",
+time : "All Day",
+northern_month:"11-03",
+southern_month:"05-09",
+
+},
+{
+    name:"Pale Chub",
+location :"River",
+size : "Smallest",
+sell_price : "160",
+time :"09-16",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Crucian Carp",
+location :"River",
+size : "Small",
+sell_price : "160",
+time : "All Day",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Dace",
+location :"River",
+size : "Medium",
+sell_price : "240",
+time:"16-09",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Carp",
+location :"Pond",
+size :"Large",
+sell_price : "300",
+time : "All Day",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Koi",
+location :"Pond",
+size :"Large",
+sell_price : "4,000",
+time:"16-09",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Goldfish",
+location :"Pond",
+size : "Smallest",
+sell_price : "1,300",
+time : "All Day",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Pop-eyed Goldfish",
+location :"Pond",
+size : "Smallest",
+sell_price : "1,300",
+time:"09-16",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Ranchu Goldfish",
+location :"Pond",
+size : "Small",
+sell_price : "4,500",
+time:"09-16",
+northern_month : "Year-round",
+southern_month : "Year-round"
+},
+{
+    name:"ifish",
+location :"Pond",
+size : "Smallest",
+sell_price : "300",
+time : "All Day",
+northern_month:"04-08",
+southern_month:"10-02",
+
+},
+{
+    name:"Crawfish",
+location :"Pond",
+size : "Small",
+sell_price : "200",
+time : "All Day",
+northern_month:"04-09",
+southern_month:"10-03",
+
+},
+{
+    name:"Soft-shelled Turtle",
+location :"River",
+size :"Large",
+sell_price : "3,750",
+time:"16-09",
+northern_month:"08-09",
+southern_month:"02-03",
+
+},
+{
+    name:"Snapping Turtle",
+location :"River",
+size:"X Large",
+sell_price : "5,000",
+time:"21-04",
+northern_month:"04-10",
+southern_month:"10-04",
+
+},
+{
+    name:"Tadpole",
+location :"Pond",
+size : "Smallest",
+sell_price : "100",
+time : "All Day",
+northern_month:"03-07",
+southern_month:"09-01",
+
+},
+{
+    name:"Frog",
+location :"Pond",
+size : "Small",
+sell_price : "120",
+time : "All Day",
+northern_month:"05-08",
+southern_month:"11-Feburary",
+
+},
+{
+    name:"Freshwater Goby",
+location :"River",
+size : "Small",
+sell_price : "400",
+time:"16-09",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Loach",
+location :"River",
+size : "Small",
+sell_price : "400",
+time : "All Day",
+northern_month:"03-05",
+southern_month:"09-11",
+
+},
+{
+    name:"Catfish",
+location :"Pond",
+size :"Large",
+sell_price : "800",
+time:"16-09",
+northern_month:"05-10",
+southern_month:"11-04",
+
+},
+{
+    name:"Giant Snakehead",
+location :"Pond",
+size:"X Large",
+sell_price : "5,500",
+time:"09-16",
+northern_month:"06-08",
+southern_month:"12-02",
+
+},
+{
+    name:"Bluegill",
+location :"River",
+size : "Small",
+sell_price : "180",
+time:"09-16",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Yellow Perch",
+location :"River",
+size : "Medium",
+sell_price : "300",
+time : "All Day",
+northern_month:"10-03",
+southern_month:"04-09",
+
+},
+{
+    name:"Black Bass",
+location :"River",
+size :"Large",
+sell_price : "400",
+time : "All Day",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Tilapia",
+location :"River",
+size : "Medium",
+sell_price : "800",
+time : "All Day",
+northern_month:"06-10",
+southern_month:"12-04",
+
+},
+{
+    name:"Pike",
+location :"River",
+size:"X Large",
+sell_price : "1,800",
+time : "All Day",
+northern_month:"09-12",
+southern_month:"03-06",
+
+},
+{
+    name:"Pond Smelt",
+location :"River",
+size : "Small",
+sell_price : "500",
+time : "All Day",
+northern_month:"12-02",
+southern_month:"06-08",
+
+},
+{
+    name:"Sweetfish",
+location :"River",
+size : "Medium",
+sell_price : "900",
+time : "All Day",
+northern_month:"07-09",
+southern_month:"01-03",
+
+},
+{
+    name:"Cherry Salmon",
+location :"River (Clifftop)",
+size : "Medium",
+sell_price : "1,000",
+time:"16-09",
+northern_month:"03-6, 9-11",
+southern_month:"03-5, 9-12",
+
+},
+{
+    name:"Char",
+location :"River (Clifftop)",
+size : "Medium",
+sell_price : "3,800",
+time:"16-09",
+northern_month:"03-6, 9-11",
+southern_month:"03-5, 9-12",
+
+},
+{
+    name:"Golden Trout",
+location :"River (Clifftop)",
+size : "Medium",
+sell_price : "15,000",
+time:"16-09",
+northern_month:"03-6, 9-11",
+southern_month:"03-5, 9-12",
+
+},
+{
+    name:"Stringfish",
+location :"River (Clifftop)",
+size :"Largest",
+sell_price : "15,000",
+time:"16-09",
+northern_month:"12-03",
+southern_month:"06-09",
+
+},
+{
+    name:"Salmon",
+location :"River (mouth)",
+size :"Large",
+sell_price : "700",
+time : "All Day",
+northern_month:"9",
+southern_month:"3",
+
+},
+{
+    name:"King Salmon",
+location :"River (mouth)",
+size :"Largest",
+sell_price : "1,800",
+time : "All Day",
+northern_month:"9",
+southern_month:"3",
+
+},
+{
+    name:"Mitten Crab",
+location :"River",
+size : "Small",
+sell_price : "2,000",
+time:"16-09",
+northern_month:"09-11",
+southern_month:"03-05",
+
+},
+{
+    name:"Guppy",
+location :"River",
+size : "Smallest",
+sell_price : "1,300",
+time:"09-16",
+northern_month:"04-11",
+southern_month:"10-05",
+
+},
+{
+    name:"Nibble Fish",
+location :"River",
+size : "Small",
+sell_price : "1,500",
+time:"09-16",
+northern_month:"05-09",
+southern_month:"11-03",
+
+},
+{
+    name:"Angelfish",
+location :"River",
+size : "Small",
+sell_price : "3,000",
+time:"16-09",
+northern_month:"05-10",
+southern_month:"11-04",
+
+},
+{
+    name:"Betta",
+location :"River",
+size : "Small",
+sell_price : "2,500",
+time:"09-16",
+northern_month:"05-10",
+southern_month:"11-04",
+
+},
+{
+    name:"Neon Tetra",
+location :"River",
+size : "Smallest",
+sell_price : "500",
+time:"09-16",
+northern_month:"04-11",
+southern_month:"10-05",
+
+},
+{
+    name:"Rainbowfish",
+location :"River",
+size : "Small",
+sell_price : "800",
+time:"09-16",
+northern_month:"05-10",
+southern_month:"11-04",
+
+},
+{
+    name:"Piranha",
+location :"River",
+size : "Small",
+sell_price : "2,500",
+time:"09-16, 21-04",
+northern_month:"06-09",
+southern_month:"12-03",
+
+},
+{
+    name:"Arowana",
+location :"River",
+size :"Large",
+sell_price : "10,000",
+time:"16-09",
+northern_month:"06-09",
+southern_month:"12-03",
+
+},
+{
+    name:"Dorado",
+location :"River",
+size:"X Large",
+sell_price : "15,000",
+time:"04-21",
+northern_month:"06-09",
+southern_month:"12-03",
+
+},
+{
+    name:"Gar",
+location :"Pond",
+size :"Largest",
+sell_price : "6,000",
+time:"16-09",
+northern_month:"06-09",
+southern_month:"12-03",
+
+},
+{
+    name:"Arapaima",
+location :"River",
+size :"Largest",
+sell_price : "10,000",
+time:"16-09",
+northern_month:"06-09",
+southern_month:"12-03",
+
+},
+{
+    name:"Saddled Bichir",
+location :"River",
+size :"Large",
+sell_price : "4,000",
+time:"21-04",
+northern_month:"06-09",
+southern_month:"12-03",
+
+},
+{
+    name:"Sturgeon",
+location :"River (mouth)",
+size :"Largest",
+sell_price : "10,000",
+time : "All Day",
+northern_month:"09-03",
+southern_month:"03-09",
+
+},
+{
+    name:"Sea Butterfly",
+location :"Sea",
+size : "Smallest",
+sell_price : "1,000",
+time : "All Day",
+northern_month:"12-03",
+southern_month:"06-09",
+
+},
+{
+    name:"Sea Horse",
+location :"Sea",
+size : "Smallest",
+sell_price : "1,100",
+time : "All Day",
+northern_month:"04-11",
+southern_month:"10-05",
+
+},
+{
+    name:"Clown Fish",
+location :"Sea",
+size : "Smallest",
+sell_price : "650",
+time : "All Day",
+northern_month:"04-09",
+southern_month:"10-03",
+
+},
+{
+    name:"Surgeonfish",
+location :"Sea",
+size : "Small",
+sell_price : "1,000",
+time : "All Day",
+northern_month:"04-09",
+southern_month:"10-03",
+
+},
+{
+    name:"Butterfly Fish",
+location :"Sea",
+size : "Small",
+sell_price : "1,000",
+time : "All Day",
+northern_month:"04-09",
+southern_month:"10-03",
+
+},
+{
+    name:"Napoleonfish",
+location :"Sea",
+size :"Largest",
+sell_price : "10,000",
+time:"04-21",
+northern_month:"07-08",
+southern_month:"01-02",
+
+},
+{
+    name:"Zebra Turkeyfish",
+location :"Sea",
+size : "Medium",
+sell_price : "500",
+time : "All Day",
+northern_month:"04-11",
+southern_month:"10-05",
+
+},
+{
+    name:"Blowfish",
+location :"Sea",
+size : "Medium",
+sell_price : "5,000",
+time:"18-04",
+northern_month:"11-02",
+southern_month:"05-08",
+
+},
+{
+    name:"Puffer Fish",
+location :"Sea",
+size : "Medium",
+sell_price : "250",
+time : "All Day",
+northern_month:"07-09",
+southern_month:"01-03",
+
+},
+{
+    name:"Anchovy",
+location :"Sea",
+size : "Small",
+sell_price : "200",
+time:"04-21",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Horse Mackerel",
+location :"Sea",
+size : "Small",
+sell_price : "150",
+time : "All Day",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Barred Knifejaw",
+location :"Sea",
+size : "Medium",
+sell_price : "5,000",
+time : "All Day",
+northern_month:"03-11",
+southern_month:"09-05",
+
+},
+{
+    name:"Sea Bass",
+location :"Sea",
+size:"X Large",
+sell_price : "400",
+time : "All Day",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Red Snapper",
+location :"Sea",
+size :"Large",
+sell_price : "3,000",
+time : "All Day",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Dab",
+location :"Sea",
+size : "Medium",
+sell_price : "300",
+time : "All Day",
+northern_month:"10-04",
+southern_month:"04-10",
+
+},
+{
+    name:"Olive Flounder",
+location :"Sea",
+size :"Large",
+sell_price : "800",
+time : "All Day",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Squid",
+location :"Sea",
+size : "Medium",
+sell_price : "500",
+time : "All Day",
+northern_month:"12-08",
+southern_month:"06-02",
+
+},
+{
+    name:"Moray Eel",
+location :"Sea",
+size:"Narrow",
+sell_price : "2,000",
+time : "All Day",
+northern_month:"08-10",
+southern_month:"02-04",
+
+},
+{
+    name:"Ribbon Eel",
+location :"Sea",
+size:"Narrow",
+sell_price : "600",
+time : "All Day",
+northern_month:"06-10",
+southern_month:"12-04",
+
+},
+{
+    name:"Tuna",
+location:"Pier",
+size :"Largest",
+sell_price : "7,000",
+time : "All Day",
+northern_month:"11-04",
+southern_month:"05-10",
+
+},
+{
+    name:"Blue Marlin",
+location:"Pier",
+size :"Largest",
+sell_price : "10,000",
+time : "All Day",
+northern_month:"07-9, 11-04",
+southern_month:"01-3, 5-11",
+
+},
+{
+    name:"Giant Trevally",
+location:"Pier",
+size :"Large",
+sell_price : "4,500",
+time : "All Day",
+northern_month:"05-10",
+southern_month:"11-04",
+
+},
+{
+    name:"Mahi-mahi",
+location :"Sea",
+size :"Large",
+sell_price : "6,000",
+time : "All Day",
+northern_month:"05-10",
+southern_month:"11-04",
+
+},
+{
+    name:"Ocean Sunfish",
+location :"Sea",
+size :"Largest (Fin)",
+sell_price : "4,000",
+time:"04-21",
+northern_month:"07-09",
+southern_month:"01-03",
+
+},
+{
+    name:"Ray",
+location :"Sea",
+size:"X Large",
+sell_price : "3,000",
+time:"04-21",
+northern_month:"08-11",
+southern_month:"02-05",
+
+},
+{
+    name:"Saw Shark",
+location :"Sea",
+size :"Largest (Fin)",
+sell_price : "12,000",
+time:"16-09",
+northern_month:"06-09",
+southern_month:"12-03",
+
+},
+{
+    name:"Hammerhead Shark",
+location :"Sea",
+size :"Largest (Fin)",
+sell_price : "8,000",
+time:"16-09",
+northern_month:"06-09",
+southern_month:"12-03",
+
+},
+{
+    name:"Great White Shark",
+location :"Sea",
+size :"Largest (Fin)",
+sell_price : "15,000",
+time:"16-09",
+northern_month:"06-09",
+southern_month:"12-03",
+
+},
+{
+    name:"Whale Shark",
+location :"Sea",
+size :"Largest (Fin)",
+sell_price : "13,000",
+time : "All Day",
+northern_month:"06-09",
+southern_month:"12-03",
+
+},
+{
+    name:"Suckerfish",
+location :"Sea",
+size :"Large (Fin)",
+sell_price : "1,500",
+time : "All Day",
+northern_month:"06-09",
+southern_month:"12-03",
+
+},
+{
+    name:"Football Fish",
+location :"Sea",
+size :"Large",
+sell_price : "2,500",
+time:"16-09",
+northern_month:"11-03",
+southern_month:"05-09",
+
+},
+{
+    name:"Oarfish",
+location :"Sea",
+size :"Largest",
+sell_price : "9,000",
+time : "All Day",
+northern_month:"12-05",
+southern_month:"06-11",
+
+},
+{
+    name:"Barreleye",
+location :"Sea",
+size : "Small",
+sell_price : "15,000",
+time:"21-04",
+northern_month : "Year-round",
+southern_month : "Year-round"
+
+},
+{
+    name:"Coelacanth",
+location :"Sea (rainy days)",
+size :"Largest",
+sell_price : "15,000",
+time : "All Day",
+northern_month : "Year-round"
+}
+            ]
+
+function generateList(){
+    var isNorth = document.getElementById("hemisphereN").checked;
+    var datetime = document.getElementById("timeOfDay").value;
+    var month = parseInt(datetime[5] + "" + datetime[6]);
+    var hour =  parseInt(datetime[11] + "" + datetime[12]);
+    console.log(datetime);
+    var i = 0;
+    let table = document.querySelector("table");
+    table.innerHTML = "";
+    console.log(fishList.innerHTML)
+    for(i=0; i < fish.length; i++){
+        var display = true;
+        month_str = fish[i].southern_month;
+        if(isNorth){
+            month_str = fish[i].northern_month;
+        }
+        if(month_str != "Year-round"){
+            var start_month = month_str[0] + "" + month_str[1];
+            var end_month = month_str[3] + "" + month_str[4];
+            start_month = parseInt(start_month);
+            end_month = parseInt(end_month);
+            if(start_month > end_month){
+                if(month < end_month || month > start_month){
+                    continue;
+                }
+            }
+            else if(month < start_month || month > end_month){
+                continue;
+            }
+        }
+        if(fish[i].time != "All Day"){
+            var start_time = parseInt(fish[i].time[0] + "" + fish[i].time[1]);
+            
+            var end_time = parseInt(fish[i].time[3] + "" + fish[i].time[4]);
+            if(start_time > end_time){
+                if(hour <= end_time || hour > start_time){
+                    continue;
+                }
+            }
+            else if(hour >= end_time || hour < start_time){
+                continue;
+            }
+        }
+        let row = table.insertRow();
+        let cell = row.insertCell();
+        let text = document.createTextNode(fish[i].name);
+        cell.appendChild(text);
+        cell = row.insertCell();
+        text = document.createTextNode(fish[i].location);
+        cell.appendChild(text);
+        cell = row.insertCell();
+        text = document.createTextNode(fish[i].sell_price);
+        cell.appendChild(text);
+    }
+    let thead = table.createTHead();
+    let row = thead.insertRow();
+    let th = document.createElement("th");
+    let text = document.createTextNode("name");
+    th.appendChild(text);
+    row.appendChild(th);
+    th = document.createElement("th");
+    text = document.createTextNode("location");
+    th.appendChild(text);
+    row.appendChild(th);
+    th = document.createElement("th");
+    text = document.createTextNode("sell price");
+    th.appendChild(text);
+    row.appendChild(th);
+    console.log(fishList.innerHTML)
+}
+        </script>
+    </head>
+    <body>
+Hemisphere:<br>
+North: <input type="radio" id="hemisphereN" onchange="generateList()" checked="true"><br>
+South: <input type="radio" id="hemisphereS" onchange="generateList()"><br>
+<br>
+Time and Date:<br>
+<input type="datetime-local" id="timeOfDay" onchange="generateList()"><br>
+
+<div >
+    <table id="fishList" style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
